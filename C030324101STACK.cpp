@@ -19,3 +19,11 @@ struct Stack {
 void init(Stack &s) {
     s.top = -1;
 }
+
+bool isEmpty(Stack s) {
+    return s.top == -1;
+}
+
+bool isFull(Stack s) {
+    return s.top == MAX - 1;
+}
