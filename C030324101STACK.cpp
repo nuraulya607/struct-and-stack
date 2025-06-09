@@ -27,3 +27,12 @@ bool isEmpty(Stack s) {
 bool isFull(Stack s) {
     return s.top == MAX - 1;
 }
+
+void push(Stack &s, mahasiswa mhs) {
+    if (isFull(s)) {
+        cout << "Stack penuh!\n";
+    } else {
+        s.top++;
+        s.data[s.top] = mhs;
+    }
+}
