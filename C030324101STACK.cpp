@@ -58,3 +58,20 @@ void display(Stack s) {
         }
     }
 }
+
+int main() {
+    Stack s;
+    init(s);
+
+    mahasiswa m1;
+    m1.nim = "c030324101";
+    m1.nama = "nur aulia wati";
+    m1.alamat = "Handil Bakti, Komp Persada Permai Baru 1, no 191";
+    m1.ipk = 3.8;
+
+    push(s, m1); 
+
+    display(s); 
+
+    return 0;
+}
