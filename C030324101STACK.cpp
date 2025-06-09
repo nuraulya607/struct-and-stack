@@ -44,3 +44,17 @@ void pop(Stack &s) {
         s.top--;
     }
 }
+
+void display(Stack s) {
+    if (isEmpty(s)) {
+        cout << "Stack kosong!\n";
+    } else {
+        for (int i = s.top; i >= 0; i--) {
+            cout << "\nData Mahasiswa ke-" << i+1 << ":\n";
+            cout << "NIM    : " << s.data[i].nim << "\n";
+            cout << "Nama   : " << s.data[i].nama << "\n";
+            cout << "Alamat : " << s.data[i].alamat << "\n";
+            cout << "IPK    : " << s.data[i].ipk << "\n";
+        }
+    }
+}
