@@ -36,3 +36,11 @@ void push(Stack &s, mahasiswa mhs) {
         s.data[s.top] = mhs;
     }
 }
+
+void pop(Stack &s) {
+    if (isEmpty(s)) {
+        cout << "Stack kosong!\n";
+    } else {
+        s.top--;
+    }
+}
