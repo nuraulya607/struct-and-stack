@@ -15,3 +15,7 @@ struct Stack {
     mahasiswa data[MAX];
     int top;
 };
+
+void init(Stack &s) {
+    s.top = -1;
+}
